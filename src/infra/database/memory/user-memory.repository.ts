@@ -4,3 +4,4 @@ import { RepositoryMemory } from "../base/repository-memory";
 
 @Injectable()
 export class UserMemoryRepository extends RepositoryMemory<UserEntity> { }
+

@@ -1,8 +1,8 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import { Test } from '@nestjs/testing';
 import { UserRepository } from "src/core/repositories/user.repository";
+import { UserMemoryRepository } from 'src/infra/database/memory/user-memory.repository';
 import { UserService } from "../application/user.service";
-import { UserMemoryRepository } from "../infra/data/memory/user-memory.repository";
 
 describe("UserService tradicional", () => {
     const userService = new UserService(new UserMemoryRepository());
